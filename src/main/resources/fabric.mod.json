@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemon_clearlag",
+  "version": "${version}",
+  "name": "Cobblemon ClearLag",
+  "description": "Clear lag automatique avec protection des Pokémon des joueurs. Config TOML + commandes in-game.",
+  "authors": ["Vous"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cobblemon_clearlag/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.clearlag.cobblemon.CobblemonClearLag"
+    ],
+    "server": [
+      "net.clearlag.cobblemon.CobblemonClearLagServer"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "cobblemon": ">=1.6.0"
+  },
+  "suggests": {}
+}
